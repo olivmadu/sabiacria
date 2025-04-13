@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro - Sabiácria</title>
+  <link rel="stylesheet" href="/css/cadastro.css">
+  <link rel="icon" href="/imagens/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Crie sua conta no Sabiácria e comece a jornada de aprendizado divertido para crianças.">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader">
+      <img src="/imagens/sabia.png" alt="Carregando..." class="bounce">
+      <p>Carregando o mundo Sabiácria...</p>
+    </div>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="landing.html">
+          <img src="/imagens/logo.png" alt="Sabiácria">
+        </a>
+      </div>
+      <nav class="nav-icons">
+        <a href="landing.html" class="nav-item">
+          <img src="/imagens/inicio.png" alt="Home">
+          <span>INÍCIO</span>
+        </a>
+        <a href="somos.html" class="nav-item">
+          <img src="/imagens/quem-somos.png" alt="Quem Somos">
+          <span>QUEM SOMOS</span>
+        </a>
+        <a href="perguntas.html" class="nav-item">
+          <img src="imagens/ajuda.png" alt="Ajuda">
+          <span>AJUDA</span>
+        </a>
+        <a href="cadastro.html" class="nav-item nav-cta active">
+          <span>COMECE AGORA</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Seção de Cadastro -->
+  <section class="cadastro">
+    <div class="container">
+      <div class="cadastro-container">
+        <div class="cadastro-header">
+          <h1 class="section-title">Crie sua conta</h1>
+          <p class="section-subtitle">Escolha o tipo de conta para começar sua jornada no Sabiácria</p>
+          
+          <div class="tipo-conta">
+            <button id="btn-familia" class="btn-tipo ativo">
+              <i class="fas fa-users"></i>
+              <span>Responsável + Criança</span>
+            </button>
+            <button id="btn-escola" class="btn-tipo">
+              <i class="fas fa-school"></i>
+              <span>Escola</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="cadastro-content">
+          <div class="cadastro-image">
+            <img src="/imagens/sabia.png" alt="Sabiá" class="bounce">
+            <div class="speech-bubble">
+              <p>Vamos começar nossa aventura!</p>
+            </div>
+          </div>
+          
+          <div class="cadastro-forms">
+            <form id="form-familia" class="formulario">
+              <h2>Cadastro de Responsável + Criança</h2>
+              
+              <div class="form-group">
+                <label for="nomeResponsavel">Nome do responsável</label>
+                <div class="input-icon">
+                  <i class="fas fa-user"></i>
+                  <input type="text" id="nomeResponsavel" name="nomeResponsavel" placeholder="Digite seu nome completo" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="emailResponsavel">E-mail</label>
+                <div class="input-icon">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="emailResponsavel" name="emailResponsavel" placeholder="Digite seu e-mail" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="senhaResponsavel">Senha</label>
+                <div class="input-icon">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" id="senhaResponsavel" name="senhaResponsavel" placeholder="Crie uma senha segura" required>
+                  <button type="button" class="toggle-password" aria-label="Mostrar senha">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </div>
+                <div class="password-strength">
+                  <div class="strength-bar">
+                    <div class="bar-progress"></div>
+                  </div>
+                  <span class="strength-text">Força da senha</span>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="nomeCrianca">Nome da criança</label>
+                <div class="input-icon">
+                  <i class="fas fa-child"></i>
+                  <input type="text" id="nomeCrianca" name="nomeCrianca" placeholder="Digite o nome da criança" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="idadeCrianca">Idade da criança</label>
+                <div class="input-icon">
+                  <i class="fas fa-birthday-cake"></i>
+                  <input type="number" id="idadeCrianca" name="idadeCrianca" min="3" max="10" placeholder="Idade entre 3 e 10 anos" required>
+                </div>
+              </div>
+              
+              <div class="form-group checkbox-group">
+                <label class="checkbox-container">
+                  <input type="checkbox" required>
+                  <span class="checkmark"></span>
+                  <span>Concordo com os <a href="termos.html">Termos de Uso</a> e <a href="privacidade.html">Política de Privacidade</a></span>
+                </label>
+              </div>
+              
+              <div class="form-group checkbox-group">
+                <label class="checkbox-container">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span>Desejo receber novidades e dicas educacionais por e-mail</span>
+                </label>
+              </div>
+              
+              <button type="submit" class="btn primary large">CRIAR CONTA</button>
+              
+              <div class="form-footer">
+                <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+              </div>
+            </form>
+            
+            <form id="form-escola" class="formulario" style="display: none;">
+              <h2>Cadastro de Escola</h2>
+              
+              <div class="form-group">
+                <label for="nomeEscola">Nome da escola</label>
+                <div class="input-icon">
+                  <i class="fas fa-school"></i>
+                  <input type="text" id="nomeEscola" name="nomeEscola" placeholder="Digite o nome da escola" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="emailEscola">E-mail institucional</label>
+                <div class="input-icon">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="emailEscola" name="emailEscola" placeholder="Digite o e-mail institucional" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="senhaEscola">Senha</label>
+                <div class="input-icon">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" id="senhaEscola" name="senhaEscola" placeholder="Crie uma senha segura" required>
+                  <button type="button" class="toggle-password" aria-label="Mostrar senha">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </div>
+                <div class="password-strength">
+                  <div class="strength-bar">
+                    <div class="bar-progress"></div>
+                  </div>
+                  <span class="strength-text">Força da senha</span>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="telefoneEscola">Telefone</label>
+                <div class="input-icon">
+                  <i class="fas fa-phone"></i>
+                  <input type="tel" id="telefoneEscola" name="telefoneEscola" placeholder="(00) 0000-0000" required>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group half">
+                  <label for="cidadeEscola">Cidade</label>
+                  <div class="input-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" id="cidadeEscola" name="cidadeEscola" placeholder="Cidade" required>
+                  </div>
+                </div>
+                
+                <div class="form-group half">
+                  <label for="estadoEscola">Estado</label>
+                  <div class="input-icon">
+                    <i class="fas fa-map"></i>
+                    <select id="estadoEscola" name="estadoEscola" required>
+                      <option value="" disabled selected>Selecione</option>
+                      <option value="AC">AC</option>
+                      <option value="AL">AL</option>
+                      <option value="AP">AP</option>
+                      <option value="AM">AM</option>
+                      <option value="BA">BA</option>
+                      <option value="CE">CE</option>
+                      <option value="DF">DF</option>
+                      <option value="ES">ES</option>
+                      <option value="GO">GO</option>
+                      <option value="MA">MA</option>
+                      <option value="MT">MT</option>
+                      <option value="MS">MS</option>
+                      <option value="MG">MG</option>
+                      <option value="PA">PA</option>
+                      <option value="PB">PB</option>
+                      <option value="PR">PR</option>
+                      <option value="PE">PE</option>
+                      <option value="PI">PI</option>
+                      <option value="RJ">RJ</option>
+                      <option value="RN">RN</option>
+                      <option value="RS">RS</option>
+                      <option value="RO">RO</option>
+                      <option value="RR">RR</option>
+                      <option value="SC">SC</option>
+                      <option value="SP">SP</option>
+                      <option value="SE">SE</option>
+                      <option value="TO">TO</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="quantidadeTurmas">Número de turmas</label>
+                <div class="input-icon">
+                  <i class="fas fa-users"></i>
+                  <input type="number" id="quantidadeTurmas" name="quantidadeTurmas" min="1" placeholder="Quantidade de turmas" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="nivelEnsino">Níveis de ensino</label>
+                <div class="checkbox-group">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="nivelEnsino" value="infantil">
+                    <span class="checkmark"></span>
+                    <span>Educação Infantil</span>
+                  </label>
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="nivelEnsino" value="fundamental1">
+                    <span class="checkmark"></span>
+                    <span>Ensino Fundamental I</span>
+                  </label>
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="nivelEnsino" value="fundamental2">
+                    <span class="checkmark"></span>
+                    <span>Ensino Fundamental II</span>
+                  </label>
+                </div>
+              </div>
+              
+              <div class="form-group checkbox-group">
+                <label class="checkbox-container">
+                  <input type="checkbox" required>
+                  <span class="checkmark"></span>
+                  <span>Concordo com os <a href="termos.html">Termos de Uso</a> e <a href="privacidade.html">Política de Privacidade</a></span>
+                </label>
+              </div>
+              
+              <button type="submit" class="btn primary large">CRIAR CONTA</button>
+              
+              <div class="form-footer">
+                <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wave-container">
+      <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#093c80" fill-opacity="1" d="M0,64L48,80C96,96,192,128,288,138.7C384,149,480,139,576,122.7C672,107,768,85,864,96C960,107,1056,149,1152,165.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="/imagens/logo.png" alt="Sabiácria" class="footer-logo-img">
+          <p>Transformando o aprendizado em diversão</p>
+          <div class="footer-contact">
+            <p><i class="fas fa-envelope"></i> contato@sabiacria.com.br</p>
+            <p><i class="fas fa-phone"></i> (11) 4002-8922</p>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="somos.html">Quem Somos</a></li>
+            <li><a href="perguntas.html">Perguntas Frequentes</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="blog.html">Blog Educativo</a></li>
+            <li><a href="termos.html">Termos de Uso</a></li>
+            <li><a href="privacidade.html">Política de Privacidade</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="atividades.html">Atividades</a></li>
+            <li><a href="jogos.html">Jogos Educativos</a></li>
+            <li><a href="historias.html">Histórias Interativas</a></li>
+            <li><a href="pais.html">Área dos Pais</a></li>
+            <li><a href="professores.html">Para Professores</a></li>
+            <li><a href="escolas.html">Sabiácria para Escolas</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-social">
+          <h3>Siga-nos</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div class="app-badges">
+            <a href="#" class="app-badge">
+              <img src="imagens/google-play-badge.png" alt="Google Play">
+            </a>
+            <a href="#" class="app-badge">
+              <img src="imagens/app-store-badge.png" alt="App Store">
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sabiácria. Todos os direitos reservados.</p>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-pix"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão de Voltar ao Topo -->
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="/js/cadastro.js"></script>
+</body>
+</html>

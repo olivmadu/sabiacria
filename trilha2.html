@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorando a Natureza - Sabiácria</title>
+  <link rel="icon" href="/imagens/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/trilha2.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="/imagens/logo.png" alt="Sabiácria">
+    </div>
+    <nav class="nav-icons">
+      <a href="index.html"><img src="/imagens/inicio.png" alt="Home"></a>
+      <a href="perfil.html"><img src="/imagens/perfil.png" alt="Perfil"></a>
+      <a href="configuracoes.html"><img src="imagens/config.png" alt="Configurações"></a>
+      <a href="perguntas.html"><img src="imagens/ajuda.png"Ajuda"></a>
+    </nav>
+  </header>
+  
+
+  <main>
+    <section class="atividade">
+      <h1>Explorando a Natureza</h1>
+      <p>Onde vive o peixe?</p>
+      <div class="opcoes">
+        <button class="resposta" data-correta="false">Floresta</button>
+        <button class="resposta" data-correta="true">Mar</button>
+        <button class="resposta" data-correta="false">Deserto</button>
+      </div>
+      <p id="feedback"></p>
+      <button onclick="location.href='trilhas.html'">Voltar para Trilhas</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sabiácria. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

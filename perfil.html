@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil - Sabiácria</title>
+  <link rel="stylesheet" href="/css/perfil.css">
+  <link rel="icon" href="/imagens/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="/imagens/logo.png" alt="Sabiácria">
+      </div>
+      <nav class="nav-icons">
+        <a href="landing.html" class="nav-item">
+          <img src="/imagens/inicio.png" alt="Home">
+          <span>INÍCIO</span>
+        </a>
+        <a href="somos.html" class="nav-item">
+          <img src="/imagens/quem-somos.png" alt="Quem Somos">
+          <span>QUEM SOMOS</span>
+        </a>
+        <a href="perguntas.html" class="nav-item">
+          <img src="imagens/ajuda.png" alt="Ajuda">
+          <span>AJUDA</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="profile-container">
+      <div class="profile-header">
+        <h1>Quem está acessando?</h1>
+        <p>Escolha o seu perfil para continuar a aventura!</p>
+      </div>
+      
+      <div class="profile-selection">
+        <div class="profile-option child-profile">
+          <div class="profile-card" id="btn-crianca">
+            <div class="profile-icon">
+              <img src="/imagens/sabia.png" alt="Perfil Infantil" class="bounce">
+            </div>
+            <div class="profile-info">
+              <h2>Sou Criança</h2>
+              <p>Vamos brincar e aprender!</p>
+            </div>
+            <div class="profile-decoration">
+              <div class="decoration-item item-1"></div>
+              <div class="decoration-item item-2"></div>
+              <div class="decoration-item item-3"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="profile-option adult-profile">
+          <div class="profile-card" id="btn-adulto">
+            <div class="profile-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="profile-info">
+              <h2>Sou Adulto</h2>
+              <p>Área de responsáveis</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="area-senha" class="password-area">
+        <div class="password-container">
+          <h2>Área de Responsáveis</h2>
+          <p>Digite a senha para acessar a área de controle parental</p>
+          
+          <div class="password-form">
+            <div class="input-with-icon">
+              <i class="fas fa-lock"></i>
+              <input type="password" id="senha" placeholder="Digite a senha de acesso">
+              <button type="button" class="toggle-password" aria-label="Mostrar senha">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+            
+            <button id="btn-validar" class="validate-button">
+              <span>Entrar</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+            
+            <p id="erro-senha" class="error-message"></p>
+            
+            <div class="password-help">
+              <a href="recuperar-senha.html">Esqueceu a senha?</a>
+            </div>
+          </div>
+          
+          <button class="back-button" id="btn-voltar">
+            <i class="fas fa-arrow-left"></i>
+            <span>Voltar</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Elementos decorativos -->
+    <div class="background-decoration">
+      <div class="bg-item bg-item-1"></div>
+      <div class="bg-item bg-item-2"></div>
+      <div class="bg-item bg-item-3"></div>
+      <div class="bg-item bg-item-4"></div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="/imagens/logo.png" alt="Sabiácria" class="footer-logo-img">
+          <p>Transformando o aprendizado em diversão</p>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="somos.html">Quem Somos</a></li>
+            <li><a href="perguntas.html">Perguntas Frequentes</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-social">
+          <h3>Siga-nos</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sabiácria. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+<script src="/js/perfil.js"></script>
+
+</body>
+</html>

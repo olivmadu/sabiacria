@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área do Responsável - Sabiácria</title>
+  <link rel="stylesheet" href="css/responsavel.css">
+  <link rel="icon" href="/imagens/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Área do responsável para acompanhar o progresso da criança no Sabiácria">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader">
+      <img src="/imagens/sabia.png" alt="Carregando..." class="bounce">
+      <p>Carregando o mundo Sabiácria...</p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="/imagens/logo.png" alt="Sabiácria">
+        </a>
+      </div>
+      <div class="user-info">
+        <div class="user-avatar">
+          <img src="/imagens/avatar-responsavel.png" alt="Avatar do Usuário">
+        </div>
+        <div class="user-details">
+          <span class="user-name">Olá, Maria Silva</span>
+          <span class="user-role">Responsável</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="notification-bell">
+          <i class="fas fa-bell"></i>
+          <span class="notification-badge">3</span>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-toggle">
+            <i class="fas fa-cog"></i>
+          </button>
+          <div class="dropdown-menu">
+            <a href="perfil.html"><i class="fas fa-user"></i> Meu Perfil</a>
+            <a href="configuracoes.html"><i class="fas fa-cog"></i> Configurações</a>
+            <a href="ajuda.html"><i class="fas fa-question-circle"></i> Ajuda</a>
+            <a href="logout.html" class="logout"><i class="fas fa-sign-out-alt"></i> Sair</a>
+          </div>
+        </div>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Sidebar e Conteúdo Principal -->
+  <div class="page-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="active">
+            <a href="#dashboard">
+              <i class="fas fa-home"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#criancas">
+              <i class="fas fa-child"></i>
+              <span>Meus Filhos</span>
+            </a>
+          </li>
+          <li>
+            <a href="#progresso">
+              <i class="fas fa-chart-line"></i>
+              <span>Progresso</span>
+            </a>
+          </li>
+          <li>
+            <a href="#relatorios">
+              <i class="fas fa-file-alt"></i>
+              <span>Relatórios</span>
+            </a>
+          </li>
+          <li>
+            <a href="#atividades">
+              <i class="fas fa-tasks"></i>
+              <span>Atividades</span>
+            </a>
+          </li>
+          <li>
+            <a href="#calendario">
+              <i class="fas fa-calendar-alt"></i>
+              <span>Calendário</span>
+            </a>
+          </li>
+          <li>
+            <a href="#mensagens">
+              <i class="fas fa-envelope"></i>
+              <span>Mensagens</span>
+              <span class="badge">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#clube">
+              <i class="fas fa-star"></i>
+              <span>Clube Sabiácria</span>
+              <span class="badge premium">Premium</span>
+            </a>
+          </li>
+          <li>
+            <a href="#materiais">
+              <i class="fas fa-book"></i>
+              <span>Materiais</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="#ajuda" class="help-link">
+          <i class="fas fa-question-circle"></i>
+          <span>Precisa de ajuda?</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+      <div class="page-header">
+        <h1>Dashboard</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Início</a> / <span>Dashboard</span>
+        </div>
+      </div>
+
+      <!-- Resumo Rápido -->
+      <section class="quick-stats">
+        <div class="stats-card">
+          <div class="stats-icon blue">
+            <i class="fas fa-book-reader"></i>
+          </div>
+          <div class="stats-info">
+            <h3>Atividades Concluídas</h3>
+            <p class="stats-number">24</p>
+            <span class="stats-trend positive">
+              <i class="fas fa-arrow-up"></i> 12% este mês
+            </span>
+          </div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-icon green">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="stats-info">
+            <h3>Conquistas</h3>
+            <p class="stats-number">8</p>
+            <span class="stats-trend positive">
+              <i class="fas fa-arrow-up"></i> 3 novas
+            </span>
+          </div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-icon yellow">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="stats-info">
+            <h3>Tempo de Aprendizado</h3>
+            <p class="stats-number">12h</p>
+            <span class="stats-trend positive">
+              <i class="fas fa-arrow-up"></i> 2h a mais
+            </span>
+          </div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-icon pink">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="stats-info">
+            <h3>Pontos Acumulados</h3>
+            <p class="stats-number">1.250</p>
+            <span class="stats-trend positive">
+              <i class="fas fa-arrow-up"></i> 320 novos
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Progresso das Crianças -->
+      <section class="children-progress">
+        <div class="section-header">
+          <h2>Progresso dos Filhos</h2>
+          <a href="#" class="view-all">Ver todos <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="children-cards">
+          <div class="child-card">
+            <div class="child-info">
+              <div class="child-avatar">
+                <img src="/imagens/avatar-joao.png" alt="João">
+              </div>
+              <div class="child-details">
+                <h3>João Silva</h3>
+                <span class="child-age">8 anos</span>
+              </div>
+            </div>
+            <div class="progress-info">
+              <div class="progress-header">
+                <span>Progresso Geral</span>
+                <span class="progress-percentage">78%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 78%"></div>
+              </div>
+            </div>
+            <div class="subject-progress">
+              <div class="subject">
+                <span>Matemática</span>
+                <div class="mini-progress">
+                  <div class="mini-fill" style="width: 85%"></div>
+                </div>
+                <span class="mini-percentage">85%</span>
+              </div>
+              <div class="subject">
+                <span>Português</span>
+                <div class="mini-progress">
+                  <div class="mini-fill" style="width: 72%"></div>
+                </div>
+                <span class="mini-percentage">72%</span>
+              </div>
+              <div class="subject">
+                <span>Ciências</span>
+                <div class="mini-progress">
+                  <div class="mini-fill" style="width: 90%"></div>
+                </div>
+                <span class="mini-percentage">90%</span>
+              </div>
+            </div>
+            <div class="child-actions">
+              <a href="#" class="btn btn-outline">Ver Detalhes</a>
+              <a href="#" class="btn btn-primary">Relatório</a>
+            </div>
+          </div>
+          <div class="child-card">
+            <div class="child-info">
+              <div class="child-avatar">
+                <img src="/imagens/avatar-ana.png" alt="Ana">
+              </div>
+              <div class="child-details">
+                <h3>Ana Silva</h3>
+                <span class="child-age">6 anos</span>
+              </div>
+            </div>
+            <div class="progress-info">
+              <div class="progress-header">
+                <span>Progresso Geral</span>
+                <span class="progress-percentage">65%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 65%"></div>
+              </div>
+            </div>
+            <div class="subject-progress">
+              <div class="subject">
+                <span>Matemática</span>
+                <div class="mini-progress">
+                  <div class="mini-fill" style="width: 60%"></div>
+                </div>
+                <span class="mini-percentage">60%</span>
+              </div>
+              <div class="subject">
+                <span>Português</span>
+                <div class="mini-progress">
+                  <div class="mini-fill" style="width: 75%"></div>
+                </div>
+                <span class="mini-percentage">75%</span>
+              </div>
+              <div class="subject">
+                <span>Ciências</span>
+                <div class="mini-progress">
+                  <div class="mini-fill" style="width: 68%"></div>
+                </div>
+                <span class="mini-percentage">68%</span>
+              </div>
+            </div>
+            <div class="child-actions">
+              <a href="#" class="btn btn-outline">Ver Detalhes</a>
+              <a href="#" class="btn btn-primary">Relatório</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Atividades Recentes e Próximas -->
+      <div class="two-column-grid">
+        <!-- Atividades Recentes -->
+        <section class="recent-activities">
+          <div class="section-header">
+            <h2>Atividades Recentes</h2>
+            <a href="#" class="view-all">Ver todas <i class="fas fa-chevron-right"></i></a>
+          </div>
+          <div class="activity-list">
+            <div class="activity-item">
+              <div class="activity-icon blue">
+                <i class="fas fa-book"></i>
+              </div>
+              <div class="activity-details">
+                <h4>Leitura Concluída</h4>
+                <p>João concluiu a leitura "A Aventura do Sabiá"</p>
+                <span class="activity-time">Hoje, 14:30</span>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon green">
+                <i class="fas fa-puzzle-piece"></i>
+              </div>
+              <div class="activity-details">
+                <h4>Jogo Educativo</h4>
+                <p>Ana completou o jogo "Matemática Divertida"</p>
+                <span class="activity-time">Ontem, 16:45</span>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon yellow">
+                <i class="fas fa-medal"></i>
+              </div>
+              <div class="activity-details">
+                <h4>Conquista Desbloqueada</h4>
+                <p>João desbloqueou a conquista "Pequeno Cientista"</p>
+                <span class="activity-time">15/04, 10:20</span>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon pink">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <div class="activity-details">
+                <h4>Atividade Artística</h4>
+                <p>Ana completou a atividade "Pintando com Formas"</p>
+                <span class="activity-time">14/04, 11:15</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Próximas Atividades -->
+        <section class="upcoming-activities">
+          <div class="section-header">
+            <h2>Próximas Atividades</h2>
+            <a href="#" class="view-all">Ver todas <i class="fas fa-chevron-right"></i></a>
+          </div>
+          <div class="calendar-view">
+            <div class="calendar-header">
+              <button class="calendar-nav prev"><i class="fas fa-chevron-left"></i></button>
+              <h3>Abril 2025</h3>
+              <button class="calendar-nav next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="calendar-events">
+              <div class="event">
+                <div class="event-date">
+                  <span class="day">25</span>
+                  <span class="month">ABR</span>
+                </div>
+                <div class="event-details">
+                  <h4>Visita ao Museu</h4>
+                  <p>Passeio educativo com a turma</p>
+                  <span class="event-time"><i class="fas fa-clock"></i> 09:00 - 12:00</span>
+                </div>
+              </div>
+              <div class="event">
+                <div class="event-date">
+                  <span class="day">28</span>
+                  <span class="month">ABR</span>
+                </div>
+                <div class="event-details">
+                  <h4>Aula de Robótica</h4>
+                  <p>Introdução à programação para crianças</p>
+                  <span class="event-time"><i class="fas fa-clock"></i> 14:00 - 15:30</span>
+                </div>
+              </div>
+              <div class="event">
+                <div class="event-date">
+                  <span class="day">10</span>
+                  <span class="month">MAI</span>
+                </div>
+                <div class="event-details">
+                  <h4>Reunião Pedagógica</h4>
+                  <p>Feedback sobre o desenvolvimento</p>
+                  <span class="event-time"><i class="fas fa-clock"></i> 18:30 - 19:30</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Relatórios e Clube Sabiácria -->
+      <div class="two-column-grid">
+        <!-- Relatórios -->
+        <section class="reports-section">
+          <div class="section-header">
+            <h2>Relatórios Recentes</h2>
+            <a href="#" class="view-all">Ver todos <i class="fas fa-chevron-right"></i></a>
+          </div>
+          <div class="reports-list">
+            <div class="report-item">
+              <div class="report-icon">
+                <i class="fas fa-file-alt"></i>
+              </div>
+              <div class="report-details">
+                <h4>Relatório de Progresso - Março</h4>
+                <p>Análise completa do desenvolvimento</p>
+                <div class="report-meta">
+                  <span><i class="fas fa-calendar"></i> 05/04/2025</span>
+                  <a href="#" class="download-link"><i class="fas fa-download"></i> Baixar PDF</a>
+                </div>
+              </div>
+            </div>
+            <div class="report-item">
+              <div class="report-icon">
+                <i class="fas fa-file-alt"></i>
+              </div>
+              <div class="report-details">
+                <h4>Relatório de Progresso - Fevereiro</h4>
+                <p>Análise completa do desenvolvimento</p>
+                <div class="report-meta">
+                  <span><i class="fas fa-calendar"></i> 05/03/2025</span>
+                  <a href="#" class="download-link"><i class="fas fa-download"></i> Baixar PDF</a>
+                </div>
+              </div>
+            </div>
+            <div class="report-item">
+              <div class="report-icon">
+                <i class="fas fa-file-alt"></i>
+              </div>
+              <div class="report-details">
+                <h4>Relatório de Progresso - Janeiro</h4>
+                <p>Análise completa do desenvolvimento</p>
+                <div class="report-meta">
+                  <span><i class="fas fa-calendar"></i> 05/02/2025</span>
+                  <a href="#" class="download-link"><i class="fas fa-download"></i> Baixar PDF</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Clube Sabiácria -->
+        <section class="club-section">
+          <div class="club-card">
+            <div class="club-header">
+              <h2>Clube Sabiácria</h2>
+              <span class="premium-badge">Premium</span>
+            </div>
+            <div class="club-content">
+              <img src="/imagens/clube-sabiacria.png" alt="Clube Sabiácria" class="club-image">
+              <p>Acesso exclusivo a conteúdos premium, atividades especiais e muito mais para seus filhos.</p>
+              <ul class="club-benefits">
+                <li><i class="fas fa-check"></i> Conteúdo exclusivo</li>
+                <li><i class="fas fa-check"></i> Atividades especiais</li>
+                <li><i class="fas fa-check"></i> Suporte prioritário</li>
+                <li><i class="fas fa-check"></i> Relatórios avançados</li>
+              </ul>
+              <a href="#" class="btn btn-premium">Acessar o Clube</a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Dicas e Materiais -->
+      <section class="tips-section">
+        <div class="section-header">
+          <h2>Dicas e Materiais para Pais</h2>
+          <a href="#" class="view-all">Ver todos <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <div class="tip-image">
+              <img src="/imagens/dica-leitura.jpg" alt="Incentivando a leitura">
+            </div>
+            <div class="tip-content">
+              <h3>Como incentivar a leitura em casa</h3>
+              <p>Descubra estratégias eficazes para despertar o interesse pela leitura em crianças de todas as idades.</p>
+              <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="tip-card">
+            <div class="tip-image">
+              <img src="/imagens/dica-tecnologia.jpg" alt="Tecnologia e educação">
+            </div>
+            <div class="tip-content">
+              <h3>Tecnologia e educação: encontrando o equilíbrio</h3>
+              <p>Como usar a tecnologia a favor do aprendizado sem excessos prejudiciais ao desenvolvimento.</p>
+              <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="tip-card">
+            <div class="tip-image">
+              <img src="/imagens/dica-rotina.jpg" alt="Rotina de estudos">
+            </div>
+            <div class="tip-content">
+              <h3>Criando uma rotina de estudos eficiente</h3>
+              <p>Aprenda a estabelecer uma rotina que favorece o aprendizado e o desenvolvimento de hábitos saudáveis.</p>
+              <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="/imagens/logo.png" alt="Sabiácria" class="footer-logo-img">
+          <p>Transformando o aprendizado em diversão</p>
+          <div class="footer-contact">
+            <p><i class="fas fa-envelope"></i> contato@sabiacria.com.br</p>
+            <p><i class="fas fa-phone"></i> (11) 4002-8922</p>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="somos.html">Quem Somos</a></li>
+            <li><a href="perguntas.html">Perguntas Frequentes</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="blog.html">Blog Educativo</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="atividades.html">Atividades</a></li>
+            <li><a href="jogos.html">Jogos Educativos</a></li>
+            <li><a href="historias.html">Histórias Interativas</a></li>
+            <li><a href="pais.html">Área dos Pais</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-social">
+          <h3>Siga-nos</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sabiácria. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão de Voltar ao Topo -->
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/responsavel.js"></script>
+</body>
+</html>

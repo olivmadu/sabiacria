@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sabiácria - Aprendizado com Propósito</title>
+  <link rel="stylesheet" href="/css/landing.css">
+  <link rel="icon" href="/imagens/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Sabiácria - Plataforma educativa que transforma o aprendizado em uma aventura emocionante para crianças.">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader">
+      <img src="/imagens/sabia.png" alt="Carregando..." class="bounce">
+      <p>Carregando o mundo Sabiácria...</p>
+    </div>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="/imagens/logo.png" alt="Sabiácria">
+        </a>
+      </div>
+      <nav class="nav-icons">
+        <a href="index.html" class="nav-item active">
+          <img src="/imagens/inicio.png" alt="Home">
+          <span>INÍCIO</span>
+        </a>
+        <a href="somos.html" class="nav-item">
+          <img src="/imagens/quem-somos.png" alt="Quem Somos">
+          <span>QUEM SOMOS</span>
+        </a>
+        <a href="faq.html" class="nav-item">
+          <img src="imagens/ajuda.png" alt="Ajuda">
+          <span>AJUDA</span>
+        </a>
+        <a href="cadastro.html" class="nav-item nav-cta">
+          <span>COMECE AGORA</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Seção Principal -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="animated-title">Aprendizado com propósito</h1>
+        <p>Atividades interativas que transformam o aprendizado em uma aventura emocionante para crianças de 3 a 8 anos.</p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" id="studentCount">5000+</span>
+            <span class="stat-label">Crianças</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" id="activityCount">200+</span>
+            <span class="stat-label">Atividades</span>
+          </div>
+        </div>
+        <div class="hero-buttons">
+          <a href="cadastro.html" class="btn primary pulse">COMECE AGORA</a>
+          <a href="#como-funciona" class="btn secondary">COMO FUNCIONA</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-container">
+          <img src="imagens/sabia.png" alt="Sabiá" class="bounce">
+          <div class="speech-bubble">
+            <p>Vamos aprender juntos!</p>
+          </div>
+        </div>
+        <div class="hero-badges">
+          <div class="badge">
+            <span>Seguro para crianças</span>
+          </div>
+          <div class="badge">
+            <span>Conteúdo pedagógico</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wave-container">
+      <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#fbbc00" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Como Funciona -->
+  <section id="como-funciona" class="como-funciona">
+    <div class="container">
+      <h2 class="section-title">COMO FUNCIONA</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-icon">
+            <i class="fas fa-user-plus"></i>
+          </div>
+          <h3>Crie uma conta</h3>
+          <p>Cadastre-se gratuitamente e configure o perfil do seu filho.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-icon">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <h3>Explore atividades</h3>
+          <p>Acesse jogos e atividades educativas personalizadas.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Acompanhe o progresso</h3>
+          <p>Visualize relatórios detalhados sobre o desenvolvimento.</p>
+        </div>
+      </div>
+      <div class="video-container">
+        <div class="video-wrapper">
+          <img src="imagens/video-placeholder.jpg" alt="Vídeo demonstrativo" id="videoPlaceholder">
+          <button class="play-button" id="playButton">
+            <i class="fas fa-play"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="wave-container">
+      <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#f5f5dc" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,202.7C384,203,480,181,576,165.3C672,149,768,139,864,154.7C960,171,1056,213,1152,218.7C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Recursos -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">NOSSOS RECURSOS</h2>
+      <div class="features-container">
+        <div class="features-image">
+          <img src="/imagens/dupla.png" alt="Personagens Sabiácria">
+          <div class="features-badge">
+            <span>Aprovado por educadores</span>
+          </div>
+        </div>
+        <div class="features-content">
+          <div class="feature" data-aos="fade-up">
+            <div class="feature-icon">
+              <img src="imagens/estrela1.png" alt="Atividades Interativas">
+            </div>
+            <div class="feature-text">
+              <h3>ATIVIDADES INTERATIVAS</h3>
+              <p>Engaje seu filho com jogos educativos que estimulam o pensamento crítico, ligado ao mundo real. Atividades como plantar, explorar, criar, resolver, complementando o ensino escolar.</p>
+            </div>
+          </div>
+          
+          <div class="feature" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-icon">
+              <img src="imagens/estrela2.png" alt="Conteúdo Personalizado">
+            </div>
+            <div class="feature-text">
+              <h3>CONTEÚDO PERSONALIZADO E RECONHECIDO</h3>
+              <p>Adapte o aprendizado ao ritmo e interesse de cada criança, de acordo com metodologias de ensino reconhecidas: Montessori e Reggio Emilia.</p>
+            </div>
+          </div>
+          
+          <div class="feature" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-icon">
+              <img src="imagens/estrela3.png" alt="Acompanhamento de Progresso">
+            </div>
+            <div class="feature-text">
+              <h3>ACOMPANHAMENTO DE PROGRESSO</h3>
+              <p>Monitore o desenvolvimento do seu filho com relatórios detalhados e visualize as áreas de maior interesse e habilidade.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wave-container">
+      <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#f5f5dc" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Quem Somos -->
+  <section class="quem-somos">
+    <div class="container">
+      <h2 class="section-title">QUEM SOMOS?</h2>
+      <div class="quem-somos-content">
+        <div class="quem-somos-text">
+          <p>A Sabiácria nasceu da paixão por educação infantil de qualidade. Nossa missão é transformar o aprendizado em uma jornada divertida e significativa para cada criança.</p>
+          <p>Com uma equipe de educadores e especialistas em desenvolvimento infantil, criamos conteúdos que estimulam a criatividade, o raciocínio lógico e as habilidades socioemocionais.</p>
+          <a href="somos.html" class="btn secondary">SAIBA MAIS</a>
+        </div>
+        <div class="quem-somos-image">
+          <img src="/imagens/grupo.png" alt="Equipe Sabiácria">
+          <div class="quem-somos-badges">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wave-container">
+      <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#8b9be4" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,197.3C384,203,480,181,576,154.7C672,128,768,96,864,101.3C960,107,1056,149,1152,165.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+    
+  <!-- Seção de Depoimentos -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">O QUE OS PAIS ESTÃO DIZENDO</h2>
+      <div class="testimonials-slider" id="testimonialSlider">
+        <div class="testimonials-container">
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p>"Meu filho adora o Sabiácria! Ele aprendeu tanto enquanto se diverte. As atividades são envolventes e educativas ao mesmo tempo. Recomendo para todas as famílias!"</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <img src="/imagens/avatar1.jpeg" alt="Ana M.">
+                </div>
+                <div class="author-info">
+                  <cite>Ana M.</cite>
+                  <span>Mãe do João, 7 anos</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p>"Uma ferramenta incrível que torna o aprendizado envolvente e acessível. Minha filha melhorou significativamente suas habilidades de leitura em apenas algumas semanas!"</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <img src="imagens/avatar-2.jpg" alt="Carlos S.">
+                </div>
+                <div class="author-info">
+                  <cite>Carlos S.</cite>
+                  <span>Pai da Maria, 6 anos</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p>"Como professora, recomendo o Sabiácria para todos os meus alunos. É uma plataforma que complementa perfeitamente o aprendizado em sala de aula e ajuda a reforçar conceitos importantes."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <img src="imagens/avatar-3.jpg" alt="Patrícia L.">
+                </div>
+                <div class="author-info">
+                  <cite>Patrícia L.</cite>
+                  <span>Professora de Ensino Fundamental</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-arrow prev" id="prevTestimonial">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+          <button class="slider-arrow next" id="nextTestimonial">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="wave-container">
+      <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#f5f5dc" fill-opacity="1" d="M0,96L48,106.7C96,117,192,139,288,149.3C384,160,480,160,576,138.7C672,117,768,75,864,69.3C960,64,1056,96,1152,106.7C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Planos -->
+  <section class="pricing">
+    <div class="container">
+      <h2 class="section-title">PLANOS PARA TODAS AS FAMÍLIAS</h2>
+      <p class="section-subtitle">Escolha o plano ideal para a jornada de aprendizado do seu filho</p>
+      
+      <div class="pricing-toggle">
+        <span>Mensal</span>
+        <label class="switch">
+          <input type="checkbox" id="pricingToggle">
+          <span class="slider round"></span>
+        </label>
+        <span>Anual</span>
+        <div class="discount-badge">Economize 20%</div>
+      </div>
+      
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Básico</h3>
+            <div class="pricing-price">
+              <div class="price monthly">R$ 14,90<span>/mês</span></div>
+              <div class="price annual">R$ 150,00<span>/ano</span></div>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Acesso a 50+ atividades</li>
+              <li><i class="fas fa-check"></i> 1 perfil de criança</li>
+              <li><i class="fas fa-check"></i> Relatórios básicos</li>
+              <li><i class="fas fa-times"></i> Conteúdo personalizado</li>
+              <li><i class="fas fa-times"></i> Suporte prioritário</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <a href="cadastro.html" class="btn secondary">COMEÇAR</a>
+          </div>
+        </div>
+        
+        <div class="pricing-card popular">
+          <div class="popular-badge">Mais Popular</div>
+          <div class="pricing-header">
+            <h3>Familiar</h3>
+            <div class="pricing-price">
+              <div class="price monthly">R$ 29,90<span>/mês</span></div>
+              <div class="price annual">R$ 300,00<span>/ano</span></div>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Acesso a todas as atividades</li>
+              <li><i class="fas fa-check"></i> Até 3 perfis de crianças</li>
+              <li><i class="fas fa-check"></i> Relatórios detalhados</li>
+              <li><i class="fas fa-check"></i> Conteúdo personalizado</li>
+              <li><i class="fas fa-times"></i> Suporte prioritário</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <a href="cadastro.html" class="btn primary">COMEÇAR</a>
+          </div>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Premium</h3>
+            <div class="pricing-price">
+              <div class="price monthly">R$ 49,90<span>/mês</span></div>
+              <div class="price annual">R$ 480,00<span>/ano</span></div>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Acesso a todas as atividades</li>
+              <li><i class="fas fa-check"></i> Até 5 perfis de crianças</li>
+              <li><i class="fas fa-check"></i> Relatórios avançados</li>
+              <li><i class="fas fa-check"></i> Conteúdo personalizado</li>
+              <li><i class="fas fa-check"></i> Suporte prioritário</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <a href="cadastro.html" class="btn secondary">COMEÇAR</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pricing-guarantee">
+        <i class="fas fa-shield-alt"></i>
+        <p>Garantia de 7 dias. Cancele a qualquer momento.</p>
+      </div>
+    </div>
+    <div class="wave-container">
+      <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#ed6890" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,128C384,128,480,160,576,165.3C672,171,768,149,864,149.3C960,149,1056,171,1152,176C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção FAQ -->
+  <section class="faq">
+    <div class="container">
+      <h2 class="section-title">PERGUNTAS FREQUENTES</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Para qual idade o Sabiácria é recomendado?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>O Sabiácria foi desenvolvido para crianças de 4 a 10 anos, com conteúdo adaptado para diferentes faixas etárias dentro desse intervalo.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Como o Sabiácria complementa o aprendizado escolar?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Nossas atividades são alinhadas com a Base Nacional Comum Curricular (BNCC) e desenvolvidas por educadores para reforçar conceitos aprendidos na escola de forma divertida e interativa.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Posso acessar em diferentes dispositivos?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Sim! O Sabiácria funciona em computadores, tablets e smartphones. Basta acessar com seu login e senha em qualquer dispositivo.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Como funciona o período de teste gratuito?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Oferecemos 7 dias de teste gratuito em todos os planos. Você pode cancelar a qualquer momento durante esse período sem ser cobrado.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>O conteúdo é atualizado com frequência?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Sim! Adicionamos novas atividades e conteúdos semanalmente para manter o aprendizado sempre fresco e interessante.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-more">
+        <a href="perguntas.html" class="btn secondary">VER TODAS AS PERGUNTAS</a>
+      </div>
+    </div>
+    <div class="wave-container">
+      <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#093c80" fill-opacity="1" d="M0,64L48,80C96,96,192,128,288,138.7C384,149,480,139,576,122.7C672,107,768,85,864,96C960,107,1056,149,1152,165.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Comece a jornada de aprendizado hoje!</h2>
+      <p>Junte-se a milhares de famílias que já descobriram o poder do aprendizado divertido.</p>
+      <div class="cta-buttons">
+        <a href="cadastro.html" class="btn primary large pulse">EXPERIMENTE GRÁTIS</a>
+        <a href="contato.html" class="btn outline">FALE CONOSCO</a>
+      </div>
+      <div class="cta-trust">
+        <div class="trust-item">
+          <i class="fas fa-lock"></i>
+          <span>Pagamento Seguro</span>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-shield-alt"></i>
+          <span>Garantia de 7 dias</span>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-headset"></i>
+          <span>Suporte 7 dias por semana</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <div class="newsletter-text">
+          <h3>Receba novidades e dicas educacionais</h3>
+          <p>Inscreva-se para receber conteúdo exclusivo sobre educação infantil e desenvolvimento.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <div class="form-group">
+            <input type="email" placeholder="Seu e-mail" required>
+            <button type="submit" class="btn primary">INSCREVER</button>
+          </div>
+          <div class="form-privacy">
+            <label>
+              <input type="checkbox" required>
+              <span>Concordo em receber e-mails do Sabiácria conforme a <a href="privacidade.html">Política de Privacidade</a></span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="/imagens/logo.png" alt="Sabiácria" class="footer-logo-img">
+          <p>Transformando o aprendizado em diversão</p>
+          <div class="footer-contact">
+            <p><i class="fas fa-envelope"></i> contato@sabiacria.com.br</p>
+            <p><i class="fas fa-phone"></i> (11) 4002-8922</p>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="somos.html">Quem Somos</a></li>
+            <li><a href="perguntas.html">Perguntas Frequentes</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="blog.html">Blog Educativo</a></li>
+            <li><a href="termos.html">Termos de Uso</a></li>
+            <li><a href="privacidade.html">Política de Privacidade</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="atividades.html">Atividades</a></li>
+            <li><a href="jogos.html">Jogos Educativos</a></li>
+            <li><a href="historias.html">Histórias Interativas</a></li>
+            <li><a href="pais.html">Área dos Pais</a></li>
+            <li><a href="professores.html">Para Professores</a></li>
+            <li><a href="escolas.html">Sabiácria para Escolas</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-social">
+          <h3>Siga-nos</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div class="app-badges">
+            <a href="#" class="app-badge">
+              <img src="imagens/google-play-badge.png" alt="Google Play">
+            </a>
+            <a href="#" class="app-badge">
+              <img src="imagens/app-store-badge.png" alt="App Store">
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sabiácria. Todos os direitos reservados.</p>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-pix"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão de Voltar ao Topo -->
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Cookie Consent -->
+  <div id="cookieConsent" class="cookie-consent">
+    <div class="cookie-content">
+      <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
+      <div class="cookie-buttons">
+        <button id="cookieAccept" class="btn primary">Aceitar</button>
+        <button id="cookieSettings" class="btn outline">Configurações</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/landing.js"></script>
+</body>
+</html>

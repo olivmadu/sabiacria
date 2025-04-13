@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crie seu Avatar - Sabiácria</title>
+  <link rel="stylesheet" href="css/avatar.css">
+  <link rel="icon" href="/imagens/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Crie seu avatar personalizado no Sabiácria e comece sua aventura de aprendizado!">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader">
+      <img src="/imagens/sabia.png" alt="Carregando..." class="bounce">
+      <p>Carregando o mundo Sabiácria...</p>
+    </div>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="/imagens/logo.png" alt="Sabiácria">
+        </a>
+      </div>
+      <nav class="nav-icons">
+        <a href="area-crianca.html" class="nav-item">
+          <img src="/imagens/inicio.png" alt="Home">
+          <span>INÍCIO</span>
+        </a>
+        <a href="perfil.html" class="nav-item">
+          <img src="/imagens/perfil.png" alt="Perfil">
+          <span>PERFIL</span>
+        </a>
+        <a href="configuracoes.html" class="nav-item">
+          <img src="/imagens/config.png" alt="Configurações">
+          <span>CONFIGURAÇÕES</span>
+        </a>
+        <a href="perguntas.html" class="nav-item">
+          <img src="/imagens/ajuda.png" alt="Ajuda">
+          <span>AJUDA</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main>
+    <section class="avatar-creator">
+      <div class="container">
+        <div class="avatar-container">
+          <div class="avatar-header">
+            <h1 class="section-title">Crie seu Avatar</h1>
+            <p class="section-subtitle">Personalize seu companheiro de aventuras no mundo Sabiácria!</p>
+          </div>
+          
+          <div class="avatar-content">
+            <div class="avatar-preview">
+              <div class="preview-container">
+                <div id="avatar-display">
+                  <img id="character-base" src="/imagens/avatares/passaro.png" alt="Avatar" class="bounce">
+                  <div id="accessory-display"></div>
+                  <div id="color-overlay"></div>
+                </div>
+                <div class="speech-bubble">
+                  <p>Olá! Vamos nos divertir juntos!</p>
+                </div>
+              </div>
+              <div class="avatar-name-display">
+                <span id="name-display">Seu Nome</span>
+              </div>
+            </div>
+            
+            <div class="avatar-options">
+              <form id="form-avatar">
+                <div class="form-group">
+                  <label for="nome">Como você se chama?</label>
+                  <div class="input-icon">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required maxlength="15">
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label>Escolha seu personagem:</label>
+                  <div class="character-options">
+                    <label class="character-option">
+                      <input type="radio" name="personagem" value="passaro" checked>
+                      <div class="character-preview">
+                        <img src="/imagens/avatares/passaro.png" alt="Pássaro">
+                        <span>Sabiá</span>
+                      </div>
+                    </label>
+                    <label class="character-option">
+                      <input type="radio" name="personagem" value="gato">
+                      <div class="character-preview">
+                        <img src="/imagens/avatares/gato.png" alt="Gato">
+                        <span>Gatinho</span>
+                      </div>
+                    </label>
+                    <label class="character-option">
+                      <input type="radio" name="personagem" value="raposa">
+                      <div class="character-preview">
+                        <img src="/imagens/avatares/raposa.png" alt="Raposa">
+                        <span>Raposa</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label>Escolha uma cor:</label>
+                  <div class="color-options">
+                    <label class="color-option">
+                      <input type="radio" name="cor" value="padrao" checked>
+                      <span class="color-circle default"></span>
+                    </label>
+                    <label class="color-option">
+                      <input type="radio" name="cor" value="azul">
+                      <span class="color-circle blue"></span>
+                    </label>
+                    <label class="color-option">
+                      <input type="radio" name="cor" value="rosa">
+                      <span class="color-circle pink"></span>
+                    </label>
+                    <label class="color-option">
+                      <input type="radio" name="cor" value="verde">
+                      <span class="color-circle green"></span>
+                    </label>
+                    <label class="color-option">
+                      <input type="radio" name="cor" value="amarelo">
+                      <span class="color-circle yellow"></span>
+                    </label>
+                    <label class="color-option">
+                      <input type="radio" name="cor" value="roxo">
+                      <span class="color-circle purple"></span>
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label>Escolha um acessório:</label>
+                  <div class="accessory-options">
+                    <label class="accessory-option">
+                      <input type="radio" name="acessorio" value="nenhum" checked>
+                      <div class="accessory-preview">
+                        <img src="/imagens/avatares/acessorios/nenhum.png" alt="Nenhum">
+                        <span>Nenhum</span>
+                      </div>
+                    </label>
+                    <label class="accessory-option">
+                      <input type="radio" name="acessorio" value="oculos">
+                      <div class="accessory-preview">
+                        <img src="/imagens/avatares/acessorios/oculos.png" alt="Óculos">
+                        <span>Óculos</span>
+                      </div>
+                    </label>
+                    <label class="accessory-option">
+                      <input type="radio" name="acessorio" value="chapeu">
+                      <div class="accessory-preview">
+                        <img src="/imagens/avatares/acessorios/chapeu.png" alt="Chapéu">
+                        <span>Chapéu</span>
+                      </div>
+                    </label>
+                    <label class="accessory-option">
+                      <input type="radio" name="acessorio" value="gravata">
+                      <div class="accessory-preview">
+                        <img src="/imagens/avatares/acessorios/gravata.png" alt="Gravata">
+                        <span>Gravata</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                
+                <button type="submit" class="btn primary large">SALVAR MEU AVATAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="wave-container">
+        <div class="wave">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#093c80" fill-opacity="1" d="M0,64L48,80C96,96,192,128,288,138.7C384,149,480,139,576,122.7C672,107,768,85,864,96C960,107,1056,149,1152,165.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal de Confirmação -->
+  <div id="confirmation-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Avatar Criado!</h2>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="success-animation">
+          <div class="checkmark-circle">
+            <div class="checkmark draw"></div>
+          </div>
+        </div>
+        <p>Seu avatar foi criado com sucesso!</p>
+        <div class="modal-avatar">
+          <img id="modal-avatar-img" src="/imagens/avatares/passaro.png" alt="Seu avatar">
+          <span id="modal-avatar-name">Seu Nome</span>
+        </div>
+        <p>Vamos começar nossa aventura?</p>
+      </div>
+      <div class="modal-footer">
+        <button id="continue-btn" class="btn primary">CONTINUAR</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="/imagens/logo.png" alt="Sabiácria" class="footer-logo-img">
+          <p>Transformando o aprendizado em diversão</p>
+          <div class="footer-contact">
+            <p><i class="fas fa-envelope"></i> contato@sabiacria.com.br</p>
+            <p><i class="fas fa-phone"></i> (11) 4002-8922</p>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="somos.html">Quem Somos</a></li>
+            <li><a href="perguntas.html">Perguntas Frequentes</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="blog.html">Blog Educativo</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="atividades.html">Atividades</a></li>
+            <li><a href="jogos.html">Jogos Educativos</a></li>
+            <li><a href="historias.html">Histórias Interativas</a></li>
+            <li><a href="pais.html">Área dos Pais</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-social">
+          <h3>Siga-nos</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sabiácria. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão de Voltar ao Topo -->
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/avatar.js"></script>
+</body>
+</html>

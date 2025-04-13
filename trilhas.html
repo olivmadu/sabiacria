@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilhas de Conhecimento - Sabiácria</title>
+  <link rel="stylesheet" href="css/trilhas.css">
+  <link rel="icon" href="/imagens/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Escolha sua trilha de aprendizado no mundo mágico do Sabiácria!">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader">
+      <img src="/imagens/sabia-voando.png" alt="Carregando..." class="bounce">
+      <div class="loading-text">
+        <span>C</span><span>a</span><span>r</span><span>r</span><span>e</span><span>g</span><span>a</span><span>n</span><span>d</span><span>o</span><span>.</span><span>.</span><span>.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Partículas de fundo -->
+  <div class="particles-container">
+    <div class="particle p1"></div>
+    <div class="particle p2"></div>
+    <div class="particle p3"></div>
+    <div class="particle p4"></div>
+    <div class="particle p5"></div>
+    <div class="particle p6"></div>
+    <div class="particle p7"></div>
+    <div class="particle p8"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="crianca.html">
+          <img src="/imagens/logo-sabia-kids.png" alt="Sabiácria">
+        </a>
+      </div>
+      
+      <div class="header-center">
+        <div class="xp-bar">
+          <div class="xp-fill" style="width: 65%"></div>
+          <div class="xp-info">
+            <span class="xp-level">Nível 5</span>
+            <span class="xp-points">650/1000 XP</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="header-right">
+        <div class="user-info">
+          <div class="user-avatar">
+            <img src="/imagens/avatar-crianca.png" alt="Seu Avatar" id="header-avatar">
+            <div class="avatar-level">5</div>
+          </div>
+          <div class="user-details">
+            <span class="user-name" id="header-name">João Silva</span>
+            <div class="user-points">
+              <i class="fas fa-star"></i>
+              <span id="header-points">1250</span> estrelas
+            </div>
+          </div>
+        </div>
+        
+        <div class="header-actions">
+          <button class="sound-toggle" aria-label="Ativar/Desativar Som">
+            <i class="fas fa-volume-up"></i>
+            <div class="tooltip">Som</div>
+          </button>
+          <a href="ajuda-crianca.html" class="help-button" aria-label="Ajuda">
+            <i class="fas fa-question-circle"></i>
+            <div class="tooltip">Ajuda</div>
+          </a>
+          <a href="configuracoes.html" class="settings-button" aria-label="Configurações">
+            <i class="fas fa-cog"></i>
+            <div class="tooltip">Configurações</div>
+          </a>
+          <a href="logout.html" class="logout-button" aria-label="Sair">
+            <i class="fas fa-sign-out-alt"></i>
+            <div class="tooltip">Sair</div>
+          </a>
+        </div>
+      </div>
+      
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-content">
+    <!-- Título da Página -->
+    <section class="page-title">
+      <div class="container">
+        <div class="title-content">
+          <div class="title-icon">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <h1>Escolha sua Trilha de Aventura!</h1>
+        </div>
+        <div class="breadcrumbs">
+          <a href="crianca.html">Início</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>Trilhas de Conhecimento</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personagem Guia -->
+    <div class="guide-character">
+      <div class="speech-bubble">
+        <p id="character-speech">Escolha uma trilha para começar sua jornada de aprendizado!</p>
+      </div>
+      <div class="character">
+        <img src="/imagens/sabia-guia.png" alt="Sabiá Guia" class="float">
+      </div>
+    </div>
+
+    <!-- Trilhas de Conhecimento -->
+    <section class="trails-section">
+      <div class="container">
+        <div class="trails-grid">
+          <!-- Trilha de Matemática -->
+          <div class="trail-card math" data-category="popular">
+            <div class="trail-banner">
+              <img src="/imagens/trilhas/matematica-banner.png" alt="Aventuras Matemáticas">
+              <div class="trail-badge">
+                <i class="fas fa-calculator"></i>
+              </div>
+              <div class="trail-difficulty">
+                <span class="level-dot active"></span>
+                <span class="level-dot active"></span>
+                <span class="level-dot"></span>
+                <span class="level-text">Iniciante</span>
+              </div>
+            </div>
+            <div class="trail-content">
+              <h2>Reino dos Números</h2>
+              <p>Explore o fascinante mundo dos números e operações matemáticas com desafios divertidos!</p>
+              <div class="trail-stats">
+                <div class="stat">
+                  <i class="fas fa-book"></i>
+                  <span>12 atividades</span>
+                </div>
+                <div class="stat">
+                  <i class="fas fa-clock"></i>
+                  <span>3-5 horas</span>
+                </div>
+                <div class="stat">
+                  <i class="fas fa-star"></i>
+                  <span>350 estrelas</span>
+                </div>
+              </div>
+              <div class="trail-progress">
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 70%"></div>
+                </div>
+                <span class="progress-text">70% concluído</span>
+              </div>
+              <a href="trilha-matematica.html" class="btn-start">Continuar Aventura</a>
+            </div>
+            <div class="trail-ribbon">
+              <span>Popular</span>
+            </div>
+          </div>
+
+          <!-- Trilha de Leitura -->
+          <div class="trail-card reading" data-category="popular">
+            <div class="trail-banner">
+              <img src="/imagens/trilhas/leitura-banner.png" alt="Floresta das Histórias">
+              <div class="trail-badge">
+                <i class="fas fa-book"></i>
+              </div>
+              <div class="trail-difficulty">
+                <span class="level-dot active"></span>
+                <span class="level-dot"></span>
+                <span class="level-dot"></span>
+                <span class="level-text">Básico</span>
+              </div>
+            </div>
+            <div class="trail-content">
+              <h2>Floresta das Histórias</h2>
+              <p>Descubra histórias mágicas e aprenda a ler com nossos amigos da floresta encantada!</p>
+              <div class="trail-stats">
+                <div class="stat">
+                  <i class="fas fa-book"></i>
+                  <span>15 atividades</span>
+                </div>
+                <div class="stat">
+                  <i class="fas fa-clock"></i>
+                  <span>4-6 horas</span>
+                </div>
+                <div class="stat">
+                  <i class="fas fa-star"></i>
+                  <span>400 estrelas</span>
+                </div>
+              </div>
+              <div class="trail-progress">
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 45%"></div>
+                </div>
+                <span class="progress-text">45% concluído</span>
+              </div>
+              <a href="trilha-leitura.html" class="btn-start">Continuar Aventura</a>
+            </div>
+            <div class="trail-ribbon">
+              <span>Popular</span>
+            </div>
+          </div>
+
+          <!-- Trilha de Ciências -->
+          <div class="trail-card science" data-category="new">
+            <div class="trail-banner">
+              <img src="/imagens/trilhas/ciencias-banner.png" alt="Laboratório das Descobertas">
+              <div class="trail-badge">
+                <i class="fas fa-flask"></i>
+              </div>
+              <div class="trail-difficulty">
+                <span class="level-dot active"></span>
+                <span class="level-dot active"></span>
+                <span class="level-dot active"></span>
+                <span class="level-text">Intermediário</span>
+              </div>
+            </div>
+            <div class="trail-content">
+              <h2>Laboratório das Descobertas</h2>
+              <p>Experimente o mundo da ciência com experimentos fascinantes e descobertas incríveis!</p>
+              <div class="trail-stats">
+                <div class="stat">
+                  <i class="fas fa-book"></i>
+                  <span>10 atividades</span>
+                </div>
+                <div class="stat">
+                  <i class="fas fa-clock"></i>
+                  <span>3-4 horas</span>
+                </div>
+                <div class="stat">
+                  <i class="fas fa-star"></i>
+                  <span>300 estrelas</span>
+                </div>
+              </div>
+              <div class="trail-progress">
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 0%"></div>
+                </div>
+                <span class="progress-text">Novo</span>
+              </div>
+              <a href="trilha-ciencias.html" class="btn-start">Começar Aventura</a>
+            </div>
+            <div class="trail-ribbon new">
+              <span>Novo</span>
+            </div>
+          </div>
+
+          <!-- Trilha de Artes -->
+          <div class="trail-card arts" data-category="new">
+            <div class="trail-banner">
+              <img src="/imagens/trilhas/artes-banner.png" alt="Ateliê Criativo">
+              <div class="trail-badge">
+                <i class="fas fa-palette"></i>
+              </div>
+              <div class="trail-difficulty">
+                <span class="level-dot active"></span>
+                <span class="level-dot"></span>
+                <span class="level-dot"></span>
+                <span class="level-text">Básico</span>
+              </div>
+            </div>
+            <div class="trail-content">
+              <h2>Ateliê Criativo</h2>
+              <p>Liberte sua criatividade com atividades artísticas divertidas e coloridas!</p>
+              <div class="trail-stats">
+                <div class="stat">
+                  <i class="fas fa-book"></i>
+                  <span>8 atividades</span>
+                </div>
+                <div class="stat">
+                  <i class="fas fa-clock"></i>
+                  <span>2-3 horas</span>
+                </div>
+                <div class="stat">
+                  <i class="fas fa-star"></i>
+                  <span>250 estrelas</span>
+                </div>
+              </div>
+              <div class="trail-progress">
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 0%"></div>
+                </div>
+                <span class="progress-text">Novo</span>
+              </div>
+              <a href="trilha-artes.html" class="btn-start">Começar Aventura</a>
+            </div>
+            <div class="trail-ribbon new">
+              <span>Novo</span>
+            </div>
+          </div>
+
+          <!-- Trilha de Música -->
+          <div class="trail-card music" data-category="coming-soon">
+            <div class="trail-banner">
+              <img src="/imagens/trilhas/musica-banner.png" alt="Sinfonia Encantada">
+              <div class="trail-badge">
+                <i class="fas fa-music"></i>
+              </div>
+              <div class="trail-difficulty">
+                <span class="level-dot active"></span>
+                <span class="level-dot active"></span>
+                <span class="level-dot"></span>
+                <span class="level-text">Iniciante</span>
+              </div>
+            </div>
+            <div class="trail-content">
+              <h2>Sinfonia Encantada</h2>
+              <p>Descubra o mundo mágico dos sons, ritmos e melodias com atividades musicais!</p>
+              <div class="trail-stats">
+                <div class="stat">
+                  <i class="fas fa-book"></i>
+                  <span>10 atividades</span>
+                </div>
+                <div class="stat">
+                  <i class="fas fa-clock"></i>
+                  <span>3-4 horas</span>
+                </div>
+                <div class="stat">
+                  <i class="fas fa-star"></i>
+                  <span>300 estrelas</span>
+                </div>
+              </div>
+              <div class="coming-soon">
+                <i class="fas fa-clock"></i>
+                <span>Em breve</span>
+              </div>
+              <button class="btn-notify">Receber Aviso</button>
+            </div>
+            <div class="trail-ribbon coming-soon">
+              <span>Em Breve</span>
+            </div>
+          </div>
+
+          <!-- Trilha de Geografia -->
+          <div class="trail-card geography" data-category="coming-soon">
+            <div class="trail-banner">
+              <img src="/imagens/trilhas/geografia-banner.png" alt="Exploradores do Mundo">
+              <div class="trail-badge">
+                <i class="fas fa-globe-americas"></i>
+              </div>
+              <div class="trail-difficulty">
+                <span class="level-dot active"></span>
+                <span class="level-dot active"></span>
+                <span class="level-dot"></span>
+                <span class="level-text">Iniciante</span>
+              </div>
+            </div>
+            <div class="trail-content">
+              <h2>Exploradores do Mundo</h2>
+              <p>Viaje pelo mundo e descubra lugares incríveis, culturas e paisagens fascinantes!</p>
+              <div class="trail-stats">
+                <div class="stat">
+                  <i class="fas fa-book"></i>
+                  <span>12 atividades</span>
+                </div>
+                <div class="stat">
+                  <i class="fas fa-clock"></i>
+                  <span>4-5 horas</span>
+                </div>
+                <div class="stat">
+                  <i class="fas fa-star"></i>
+                  <span>350 estrelas</span>
+                </div>
+              </div>
+              <div class="coming-soon">
+                <i class="fas fa-clock"></i>
+                <span>Em breve</span>
+              </div>
+              <button class="btn-notify">Receber Aviso</button>
+            </div>
+            <div class="trail-ribbon coming-soon">
+              <span>Em Breve</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filtros de Trilhas -->
+    <section class="trails-filter">
+      <div class="container">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">Todas as Trilhas</button>
+          <button class="filter-btn" data-filter="popular">Populares</button>
+          <button class="filter-btn" data-filter="new">Novidades</button>
+          <button class="filter-btn" data-filter="coming-soon">Em Breve</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sugestão de Trilha -->
+    <section class="trail-suggestion">
+      <div class="container">
+        <div class="suggestion-card">
+          <div class="suggestion-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <div class="suggestion-content">
+            <h3>Não sabe por onde começar?</h3>
+            <p>Responda algumas perguntas simples e descobriremos a trilha perfeita para você!</p>
+            <button class="btn-suggestion">Encontrar Minha Trilha</button>
+          </div>
+          <div class="suggestion-image">
+            <img src="/imagens/trilhas/sugestao-trilha.png" alt="Sugestão de Trilha">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-clouds"></div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="/imagens/logo-sabia-kids.png" alt="Sabiácria" class="footer-logo-img">
+          <p>Aprender é uma grande aventura!</p>
+        </div>
+        
+        <div class="footer-nav">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="crianca.html">Início</a></li>
+            <li><a href="todas-atividades.html">Atividades</a></li>
+            <li><a href="todas-trilhas.html">Trilhas</a></li>
+            <li><a href="todos-jogos.html">Jogos</a></li>
+            <li><a href="todas-conquistas.html">Conquistas</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-help">
+          <h3>Precisa de Ajuda?</h3>
+          <a href="ajuda-crianca.html" class="help-link">
+            <i class="fas fa-question-circle"></i>
+            <span>Central de Ajuda</span>
+          </a>
+          <a href="fale-conosco.html" class="help-link">
+            <i class="fas fa-envelope"></i>
+            <span>Fale Conosco</span>
+          </a>
+          <a href="dicas.html" class="help-link">
+            <i class="fas fa-lightbulb"></i>
+            <span>Dicas e Truques</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>Sabiácria - Feito com <i class="fas fa-heart"></i> para crianças</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão de Voltar ao Topo -->
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Modal de Notificação -->
+  <div class="modal" id="notifyModal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-header">
+        <div class="modal-icon">
+          <i class="fas fa-bell"></i>
+        </div>
+        <h2>Receber Aviso</h2>
+      </div>
+      <div class="modal-body">
+        <p>Vamos te avisar quando esta trilha estiver disponível!</p>
+        <form id="notifyForm">
+          <div class="form-group">
+            <label for="parentEmail">E-mail do responsável:</label>
+            <input type="email" id="parentEmail" placeholder="email@exemplo.com" required>
+          </div>
+          <div class="form-group">
+            <label for="childName">Seu nome:</label>
+            <input type="text" id="childName" placeholder="Seu nome" required>
+          </div>
+          <div class="form-group checkbox">
+            <input type="checkbox" id="termsAgree" required>
+            <label for="termsAgree">Concordo em receber notificações sobre esta trilha</label>
+          </div>
+          <button type="submit" class="btn-submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/trilhas.js"></script>
+</body>
+</html>

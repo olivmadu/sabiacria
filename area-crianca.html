@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo Sabiácria - Sua Aventura de Aprendizado</title>
+  <link rel="stylesheet" href="/css/area-crianca.css">
+  <link rel="icon" href="/imagens/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Embarque em uma jornada mágica de aprendizado no Mundo Sabiácria!">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader">
+      <img src="/imagens/sabia-voando.png" alt="Carregando..." class="bounce">
+      <div class="loading-text">
+        <span>C</span><span>a</span><span>r</span><span>r</span><span>e</span><span>g</span><span>a</span><span>n</span><span>d</span><span>o</span><span>.</span><span>.</span><span>.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Partículas de fundo -->
+  <div class="particles-container">
+    <div class="particle p1"></div>
+    <div class="particle p2"></div>
+    <div class="particle p3"></div>
+    <div class="particle p4"></div>
+    <div class="particle p5"></div>
+    <div class="particle p6"></div>
+    <div class="particle p7"></div>
+    <div class="particle p8"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="/imagens/logo.png" alt="Sabiácria">
+        </a>
+      </div>
+      
+      <div class="header-center">
+        <div class="xp-bar">
+          <div class="xp-fill" style="width: 65%"></div>
+          <div class="xp-info">
+            <span class="xp-level">Nível 5</span>
+            <span class="xp-points">650/1000 XP</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="header-right">
+        <div class="user-info">
+          <div class="user-avatar">
+            <img src="/imagens/avatar-crianca.png" alt="Seu Avatar" id="header-avatar">
+            <div class="avatar-level">5</div>
+          </div>
+          <div class="user-details">
+            <span class="user-name" id="header-name">João Silva</span>
+            <div class="user-points">
+              <i class="fas fa-star"></i>
+              <span id="header-points">1250</span> estrelas
+            </div>
+          </div>
+        </div>
+        
+        <div class="header-actions">
+          <button class="sound-toggle" aria-label="Ativar/Desativar Som">
+            <i class="fas fa-volume-up"></i>
+            <div class="tooltip">Som</div>
+          </button>
+          <a href="ajuda-crianca.html" class="help-button" aria-label="Ajuda">
+            <i class="fas fa-question-circle"></i>
+            <div class="tooltip">Ajuda</div>
+          </a>
+          <a href="configuracoes.html" class="settings-button" aria-label="Configurações">
+            <i class="fas fa-cog"></i>
+            <div class="tooltip">Configurações</div>
+          </a>
+          <a href="logout.html" class="logout-button" aria-label="Sair">
+            <i class="fas fa-sign-out-alt"></i>
+            <div class="tooltip">Sair</div>
+          </a>
+        </div>
+      </div>
+      
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-content">
+    <!-- Boas-vindas e Personagem Guia -->
+    <section class="welcome-hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="welcome-message">
+            <h1 class="animated-title">
+              <span class="greeting">Olá,</span>
+              <span class="name" id="welcome-name">João!</span>
+            </h1>
+            <p class="welcome-text">Que bom te ver por aqui! Vamos continuar nossa aventura de aprendizado?</p>
+            <div class="daily-mission">
+              <div class="mission-icon">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <div class="mission-info">
+                <h3>Missão do Dia</h3>
+                <p>Complete 2 atividades de matemática</p>
+                <div class="mission-progress">
+                  <div class="mission-bar">
+                    <div class="mission-fill" style="width: 50%"></div>
+                  </div>
+                  <span>1/2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="character-container">
+            <div class="speech-bubble">
+              <p id="character-speech">Vamos explorar e aprender coisas novas hoje?</p>
+            </div>
+            <div class="character">
+              <img src="/imagens/sabia-guia.png" alt="Sabiá Guia" class="float">
+            </div>
+          </div>
+        </div>
+        
+        <div class="quick-actions">
+          <a href="avatar.html" class="quick-action-btn">
+            <div class="action-icon">
+              <i class="fas fa-user-astronaut"></i>
+            </div>
+            <span>Meu Avatar</span>
+          </a>
+          <a href="conquistas.html" class="quick-action-btn">
+            <div class="action-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <span>Conquistas</span>
+          </a>
+          <a href="amigos.html" class="quick-action-btn">
+            <div class="action-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <span>Amigos</span>
+          </a>
+          <a href="colecao.html" class="quick-action-btn">
+            <div class="action-icon">
+              <i class="fas fa-gem"></i>
+            </div>
+            <span>Coleção</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mundo de Aventuras (Trilhas) -->
+    <section class="adventure-world">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">
+            <div class="title-icon">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <h2>Mundo de Aventuras</h2>
+          </div>
+          <a href="todas-trilhas.html" class="view-all">Ver todas <i class="fas fa-chevron-right"></i></a>
+        </div>
+        
+        <div class="adventure-map">
+          <div class="map-background">
+            <img src="/imagens/mapa-aventuras.png" alt="Mapa de Aventuras">
+          </div>
+          
+          <div class="adventure-paths">
+            <!-- Trilha de Matemática -->
+            <div class="adventure-path math-path">
+              <a href="trilha-matematica.html" class="path-node active">
+                <div class="node-content">
+                  <div class="node-icon">
+                    <i class="fas fa-calculator"></i>
+                  </div>
+                  <div class="node-info">
+                    <h3>Reino dos Números</h3>
+                    <div class="node-progress">
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 70%"></div>
+                      </div>
+                      <span>70%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="path-details">
+                  <p>Explore o fascinante mundo dos números e operações matemáticas!</p>
+                  <div class="path-stats">
+                    <div class="stat">
+                      <i class="fas fa-star"></i>
+                      <span>240 estrelas</span>
+                    </div>
+                    <div class="stat">
+                      <i class="fas fa-book"></i>
+                      <span>8 atividades</span>
+                    </div>
+                  </div>
+                  <button class="btn-continue">Continuar Aventura</button>
+                </div>
+              </a>
+              
+              <div class="path-connection"></div>
+            </div>
+            
+            <!-- Trilha de Leitura -->
+            <div class="adventure-path reading-path">
+              <a href="trilha-livros.html" class="path-node active">
+                <div class="node-content">
+                  <div class="node-icon">
+                    <i class="fas fa-book"></i>
+                  </div>
+                  <div class="node-info">
+                    <h3>Floresta das Histórias</h3>
+                    <div class="node-progress">
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 45%"></div>
+                      </div>
+                      <span>45%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="path-details">
+                  <p>Descubra histórias mágicas e aprenda a ler com nossos amigos da floresta!</p>
+                  <div class="path-stats">
+                    <div class="stat">
+                      <i class="fas fa-star"></i>
+                      <span>180 estrelas</span>
+                    </div>
+                    <div class="stat">
+                      <i class="fas fa-book"></i>
+                      <span>12 atividades</span>
+                    </div>
+                  </div>
+                  <button class="btn-continue">Continuar Aventura</button>
+                </div>
+              </a>
+              
+              <div class="path-connection"></div>
+            </div>
+            
+            <!-- Trilha Bloqueada -->
+            <div class="adventure-path science-path locked">
+              <div class="path-node">
+                <div class="node-content">
+                  <div class="node-icon">
+                    <i class="fas fa-flask"></i>
+                    <div class="lock-icon">
+                      <i class="fas fa-lock"></i>
+                    </div>
+                  </div>
+                  <div class="node-info">
+                    <h3>Laboratório das Descobertas</h3>
+                    <p class="unlock-info">Desbloqueie no Nível 8</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Atividades Recomendadas -->
+    <section class="recommended-activities">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">
+            <div class="title-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h2>Atividades Recomendadas</h2>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-nav prev" aria-label="Anterior">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-nav next" aria-label="Próximo">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="activities-carousel">
+          <div class="carousel-container">
+            <div class="carousel-track">
+              <!-- Atividade 1 -->
+              <a href="atividade-contagem.html" class="activity-card">
+                <div class="activity-thumbnail">
+                  <img src="/imagens/atividades/contagem-divertida.png" alt="Contagem Divertida">
+                  <div class="activity-badges">
+                    <span class="badge math">Matemática</span>
+                    <span class="badge level">Nível 1</span>
+                  </div>
+                </div>
+                <div class="activity-info">
+                  <h3>Contagem Divertida</h3>
+                  <p>Aprenda a contar com os animais da floresta</p>
+                  <div class="activity-meta">
+                    <span class="duration"><i class="fas fa-clock"></i> 15 min</span>
+                    <span class="reward"><i class="fas fa-star"></i> 25 estrelas</span>
+                  </div>
+                </div>
+                <div class="activity-progress">
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                  </div>
+                  <span class="progress-text">Novo</span>
+                </div>
+              </a>
+              
+              <!-- Atividade 2 -->
+              <a href="atividade-historia.html" class="activity-card">
+                <div class="activity-thumbnail">
+                  <img src="/imagens/atividades/historia-sabia.png" alt="A Aventura do Sabiá">
+                  <div class="activity-badges">
+                    <span class="badge reading">Leitura</span>
+                    <span class="badge level">Nível 2</span>
+                  </div>
+                </div>
+                <div class="activity-info">
+                  <h3>A Aventura do Sabiá</h3>
+                  <p>Uma história emocionante sobre amizade e coragem</p>
+                  <div class="activity-meta">
+                    <span class="duration"><i class="fas fa-clock"></i> 20 min</span>
+                    <span class="reward"><i class="fas fa-star"></i> 30 estrelas</span>
+                  </div>
+                </div>
+                <div class="activity-progress">
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50%"></div>
+                  </div>
+                  <span class="progress-text">Continuando</span>
+                </div>
+              </a>
+              
+              <!-- Atividade 3 -->
+              <a href="atividade-formas.html" class="activity-card">
+                <div class="activity-thumbnail">
+                  <img src="/imagens/atividades/formas-geometricas.png" alt="Formas Geométricas">
+                  <div class="activity-badges">
+                    <span class="badge math">Matemática</span>
+                    <span class="badge level">Nível 1</span>
+                  </div>
+                </div>
+                <div class="activity-info">
+                  <h3>Formas Geométricas</h3>
+                  <p>Descubra as formas que existem ao nosso redor</p>
+                  <div class="activity-meta">
+                    <span class="duration"><i class="fas fa-clock"></i> 10 min</span>
+                    <span class="reward"><i class="fas fa-star"></i> 20 estrelas</span>
+                  </div>
+                </div>
+                <div class="activity-progress">
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 100%"></div>
+                  </div>
+                  <span class="progress-text">Concluído</span>
+                </div>
+              </a>
+              
+              <!-- Atividade 4 -->
+              <a href="atividade-alfabeto.html" class="activity-card">
+                <div class="activity-thumbnail">
+                  <img src="/imagens/atividades/alfabeto-animado.png" alt="Alfabeto Animado">
+                  <div class="activity-badges">
+                    <span class="badge reading">Leitura</span>
+                    <span class="badge level">Nível 1</span>
+                  </div>
+                </div>
+                <div class="activity-info">
+                  <h3>Alfabeto Animado</h3>
+                  <p>Aprenda as letras com animações divertidas</p>
+                  <div class="activity-meta">
+                    <span class="duration"><i class="fas fa-clock"></i> 15 min</span>
+                    <span class="reward"><i class="fas fa-star"></i> 25 estrelas</span>
+                  </div>
+                </div>
+                <div class="activity-progress">
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 75%"></div>
+                  </div>
+                  <span class="progress-text">Continuando</span>
+                </div>
+              </a>
+              
+              <!-- Atividade 5 -->
+              <a href="atividade-adicao.html" class="activity-card">
+                <div class="activity-thumbnail">
+                  <img src="/imagens/atividades/adicao-subtracao.png" alt="Adição e Subtração">
+                  <div class="activity-badges">
+                    <span class="badge math">Matemática</span>
+                    <span class="badge level">Nível 2</span>
+                  </div>
+                </div>
+                <div class="activity-info">
+                  <h3>Adição e Subtração</h3>
+                  <p>Aprenda a somar e subtrair com exemplos divertidos</p>
+                  <div class="activity-meta">
+                    <span class="duration"><i class="fas fa-clock"></i> 20 min</span>
+                    <span class="reward"><i class="fas fa-star"></i> 35 estrelas</span>
+                  </div>
+                </div>
+                <div class="activity-progress">
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                  </div>
+                  <span class="progress-text">Novo</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conquistas e Jogos -->
+    <section class="achievements-games">
+      <div class="container">
+        <div class="two-column-grid">
+          <!-- Conquistas Recentes -->
+          <div class="achievements-section">
+            <div class="section-header">
+              <div class="section-title">
+                <div class="title-icon">
+                  <i class="fas fa-trophy"></i>
+                </div>
+                <h2>Suas Conquistas</h2>
+              </div>
+              <a href="todas-conquistas.html" class="view-all">Ver todas <i class="fas fa-chevron-right"></i></a>
+            </div>
+            
+            <div class="achievements-container">
+              <div class="achievement-card unlocked">
+                <div class="achievement-icon">
+                  <img src="/imagens/conquistas/primeira-atividade.png" alt="Primeira Atividade">
+                  <div class="achievement-glow"></div>
+                </div>
+                <div class="achievement-info">
+                  <h3>Primeira Atividade</h3>
+                  <p>Completou sua primeira atividade</p>
+                </div>
+              </div>
+              
+              <div class="achievement-card unlocked">
+                <div class="achievement-icon">
+                  <img src="/imagens/conquistas/matematico.png" alt="Pequeno Matemático">
+                  <div class="achievement-glow"></div>
+                </div>
+                <div class="achievement-info">
+                  <h3>Pequeno Matemático</h3>
+                  <p>Completou 5 atividades de matemática</p>
+                </div>
+              </div>
+              
+              <div class="achievement-card unlocked">
+                <div class="achievement-icon">
+                  <img src="/imagens/conquistas/leitor.png" alt="Leitor Iniciante">
+                  <div class="achievement-glow"></div>
+                </div>
+                <div class="achievement-info">
+                  <h3>Leitor Iniciante</h3>
+                  <p>Leu 3 histórias completas</p>
+                </div>
+              </div>
+              
+              <div class="achievement-card">
+                <div class="achievement-icon locked">
+                  <img src="/imagens/conquistas/desafio.png" alt="Desafio Aceito">
+                  <div class="lock-icon">
+                    <i class="fas fa-lock"></i>
+                  </div>
+                </div>
+                <div class="achievement-info">
+                  <h3>Desafio Aceito</h3>
+                  <p>Complete um desafio difícil</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Jogos Divertidos -->
+          <div class="games-section">
+            <div class="section-header">
+              <div class="section-title">
+                <div class="title-icon">
+                  <i class="fas fa-gamepad"></i>
+                </div>
+                <h2>Jogos Divertidos</h2>
+              </div>
+              <a href="todos-jogos.html" class="view-all">Ver todos <i class="fas fa-chevron-right"></i></a>
+            </div>
+            
+            <div class="games-container">
+              <a href="jogo-memoria.html" class="game-card">
+                <div class="game-thumbnail">
+                  <img src="/imagens/jogos/jogo-memoria.png" alt="Jogo da Memória">
+                  <div class="game-overlay">
+                    <span class="play-button">
+                      <i class="fas fa-play"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="game-info">
+                  <h3>Jogo da Memória</h3>
+                  <p>Teste sua memória com os animais da floresta</p>
+                </div>
+              </a>
+              
+              <a href="jogo-quebra-cabeca.html" class="game-card">
+                <div class="game-thumbnail">
+                  <img src="/imagens/jogos/quebra-cabeca.png" alt="Quebra-Cabeça">
+                  <div class="game-overlay">
+                    <span class="play-button">
+                      <i class="fas fa-play"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="game-info">
+                  <h3>Quebra-Cabeça</h3>
+                  <p>Monte lindas imagens peça por peça</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personalize seu Avatar -->
+    <section class="avatar-customization">
+      <div class="container">
+        <div class="avatar-card">
+          <div class="avatar-preview">
+            <div class="avatar-frame">
+              <img src="/imagens/avatar-crianca.png" alt="Seu Avatar" id="avatar-preview">
+            </div>
+            <div class="avatar-accessories">
+              <div class="accessory hat">
+                <img src="/imagens/acessorios/chapeu-magico.png" alt="Chapéu Mágico">
+              </div>
+              <div class="accessory pet">
+                <img src="/imagens/acessorios/pet-sabia.png" alt="Pet Sabiá">
+              </div>
+            </div>
+          </div>
+          <div class="avatar-info">
+            <h2>Personalize seu Avatar</h2>
+            <p>Desbloqueie novos itens e acessórios completando atividades!</p>
+            <div class="avatar-stats">
+              <div class="avatar-stat">
+                <i class="fas fa-tshirt"></i>
+                <span>12 itens desbloqueados</span>
+              </div>
+              <div class="avatar-stat">
+                <i class="fas fa-palette"></i>
+                <span>5 cores disponíveis</span>
+              </div>
+            </div>
+            <a href="avatar.html" class="btn-customize">Personalizar Avatar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-clouds"></div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="/imagens/logo-sabia-kids.png" alt="Sabiácria" class="footer-logo-img">
+          <p>Aprender é uma grande aventura!</p>
+        </div>
+        
+        <div class="footer-nav">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="crianca.html">Início</a></li>
+            <li><a href="todas-atividades.html">Atividades</a></li>
+            <li><a href="todas-trilhas.html">Trilhas</a></li>
+            <li><a href="todos-jogos.html">Jogos</a></li>
+            <li><a href="todas-conquistas.html">Conquistas</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-help">
+          <h3>Precisa de Ajuda?</h3>
+          <a href="ajuda-crianca.html" class="help-link">
+            <i class="fas fa-question-circle"></i>
+            <span>Central de Ajuda</span>
+          </a>
+          <a href="fale-conosco.html" class="help-link">
+            <i class="fas fa-envelope"></i>
+            <span>Fale Conosco</span>
+          </a>
+          <a href="dicas.html" class="help-link">
+            <i class="fas fa-lightbulb"></i>
+            <span>Dicas e Truques</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>Sabiácria - Feito com <i class="fas fa-heart"></i> para crianças</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão de Voltar ao Topo -->
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/area-criança.js"></script>
+</body>
+</html>
