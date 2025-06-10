@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #333;
   line-height: 1.6;
   overflow-x: hidden;
@@ -184,7 +184,6 @@ button, input, select, textarea {
 }
 
 .section-title h2 {
-  font-family: 'Pangolin', cursive;
   color: var(--azul-escuro);
   font-size: 1.8rem;
   margin: 0;
@@ -415,7 +414,6 @@ button, input, select, textarea {
 }
 
 .loading-text {
-  font-family: 'Pangolin', cursive;
   color: white;
   font-size: 1.5rem;
 }
@@ -703,7 +701,6 @@ button, input, select, textarea {
 }
 
 .animated-title {
-  font-family: 'Pangolin', cursive;
   font-size: 3rem;
   color: var(--azul-escuro);
   margin-bottom: 15px;
@@ -849,7 +846,6 @@ button, input, select, textarea {
 .speech-bubble p {
   font-size: 0.9rem;
   color: var(--azul-escuro);
-  font-family: 'Pangolin', cursive;
 }
 
 .character {
@@ -1047,7 +1043,6 @@ button, input, select, textarea {
 }
 
 .node-info h3 {
-  font-family: 'Pangolin', cursive;
   font-size: 1.5rem;
   color: var(--azul-escuro);
   margin-bottom: 10px;
@@ -1599,7 +1594,6 @@ button, input, select, textarea {
 }
 
 .avatar-info h2 {
-  font-family: 'Pangolin', cursive;
   font-size: 2.5rem;
   margin-bottom: 15px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -1696,7 +1690,6 @@ footer {
 }
 
 .footer-nav h3, .footer-help h3 {
-  font-family: 'Pangolin', cursive;
   font-size: 1.3rem;
   margin-bottom: 20px;
   color: var(--amarelo);
